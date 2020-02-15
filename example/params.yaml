@@ -1,0 +1,13 @@
+roboclaw_node: 
+  managers: 
+    - 
+      port: /dev/ttyACM1
+      cutoff_freq: 0.1 # cutoff frequency radians
+      roboclaws:
+        "81": 
+          "1": M1
+          "2": M2
+#        "81": 
+#          "1": M3a
+#          "2": M3b
+#          "12": M3
