@@ -135,7 +135,7 @@ class RoboclawX2Serial:
         try:
             self._port.write(chr(int(val)&0xFF))
         except Exception as err:
-            print(val)
+            #print(val)
             raise err
 
     def _read_byte(self):
@@ -164,10 +164,10 @@ class RoboclawX2Serial:
                 # write command
                 # write any data bytes
                 for data in send:
-                    print(data)
+                    #print(data)
                     for i in range(bytes_per_send):
                         val = data>>(8*(bytes_per_send-i-1))
-                        print(val&0xFF)
+                        #print(val&0xFF)
                         self._write_byte(val)
                         self._crc_update(val&0xFF)
 
