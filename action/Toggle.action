@@ -1,0 +1,5 @@
+bool toggle
+---
+bool succ
+---
+bool err # 1 means stall
